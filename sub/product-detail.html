@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>product_detail</title>
+
+  <!-- 오픈그래프 설정-->
+  <meta property="og:title" content="이솝"><!-- 타이틀 -->
+  <meta property="og:url" content="http://test.dothome.co.kr"><!-- 도메인 -->
+  <meta property="og:description" content="순환을 위한 이솝의 여정"><!-- 간략한 설명, 모토나 슬로건,  -->
+  <meta property="og:image" content="images/common/open.png"><!-- 이미지 비율이 있음 (크기는 없음) 2:1 비율 -->
+
+
+  <!-- 파비콘 -->
+  <link rel="shortcut icon" href="images/common/aesop.png"><!-- 크기 : 16*16 -->
+
+  <!-- font -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&family=Philosopher:wght@400;700&display=swap"
+    rel="stylesheet"> <!-- 한글폰트 -->
+  <link rel="stylesheet" href="../css/font2.css"> <!-- 영문폰트 -->
+
+
+
+  <!-- css -->
+  <link rel="stylesheet" href="../css/common.css">
+  <link rel="stylesheet" href="../css/animate.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="stylesheet" href="../css/swiper-bundle.min.css"> <!-- cdn방식으로 적용 -->
+  <link rel="stylesheet" href="../css/product-detail.css">
+
+
+  <!-- js -->
+  <script src="../js/jquery-3.6.0.min.js"></script>
+  <script src="../js/swiper-bundle.min.js"></script>
+  <script src="../js/common.js"></script>
+  <script src="../js/product-detail.js"></script>
+
+</head>
+
+<body>
+
+  <div id="wrap">
+    <header id="header">
+      <div class="inner">
+        <ul class="login">
+          <li><a href="#">LOGIN</a></li>
+          <li><a href="#">CART</a></li>
+        </ul><!-- login -->
+  
+        <h1>
+          <a href="../index.html">
+            <img src="../images/common/logo.png" alt="이솝">
+          </a>
+        </h1>
+  
+        <div class="ham">
+          <a href="#"><img src="../images/common/ham.png" alt=""></a>
+  
+        </div><!-- ham -->
+  
+      </div><!-- inner -->
+  
+      <div class="gnb_wrap">
+        <div class="left">
+          <nav>
+            <ul class="gnb">
+              <li><a href="#"> Product <span>제품</span> </a>
+              </li>
+              <li><a href="#"> Brand <span>브랜드</span> </a></li>
+              <li><a href="#"> Store <span>매장</span> </a></li>
+              <li><a href="#"> The Atheneum <span>더아테네움</span> </a></li>
+          </nav>
+        </div><!-- left -->
+  
+        <div class="right">
+          <img src="../images/main/depth-01.jpg" alt="메뉴관련사진">
+        </div>
+        </ul><!-- gnb -->
+  
+        <div class="ham_close">
+          <img src="../images/common/btn_close.png" alt="팝업 닫기">
+        </div><!-- btn_close -->
+      </div><!-- gnb_wrap -->
+  
+      <div class="depth2">
+        <div class="depth2_bg depth2_01">
+          <div class="depth2_left">
+            <ul>
+              <li><a href="../sub/product.html">Best<span>베스트</span></a></li>
+              <li><a href="../sub/product.html">Skin Care<span>스킨케어</span></a></li>
+              <li><a href="../sub/product.html">Hair<span>헤어</span></a></li>
+              <li><a href="../sub/product.html">Fragrance<span>향수</span></a></li>
+              <li><a href="../sub/product.html">Home<span>홈</span></a></li>
+              <li><a href="../sub/product.html">kit<span>키트</span></a></li>
+              <li><a href="../sub/product.html">Gift<span>기프트</span></a></li>
+            </ul>
+          </div> <!-- depth2_left -->
+  
+          <div class="depth2_right">
+            <img src="../images/common/depth2-01.png" alt="메뉴관련사진">
+          </div>
+  
+          <div class="btn_close">
+            <img src="../images/common/btn_close.png" alt="팝업 닫기">
+          </div><!-- btn_close -->
+        </div><!-- depth2_01 -->
+  
+        <div class="depth2_bg depth2_02">
+          <div class="depth2_left">
+            <ul>
+              <li><a href="../sub/brand.html">이솝이야기</a></li>
+              <li><a href="http://taxonomyofdesign.com/#!/"><span>Taxonomy of Design</span></a></li>
+            </ul>
+          </div> <!-- depth2_left -->
+  
+          <div class="depth2_right">
+            <img src="../images/common/depth2-02.png" alt="메뉴관련사진">
+          </div>
+  
+          <div class="btn_close">
+            <img src="../images/common/btn_close.png" alt="팝업 닫기">
+          </div><!-- btn_close -->
+        </div><!-- depth2_02 -->
+  
+        <div class="depth2_bg depth2_03">
+          <div class="depth2_left">
+            <ul>
+              <li><a href="../sub/store.html">매장찾기</a></li>
+              <li><a href="../sub/facialappointment.html"> <span> Facial Appointment </span> </a></li>
+            </ul>
+          </div> <!-- depth2_left -->
+  
+          <div class="depth2_right">
+            <img src="../images/common/depth2-03.png" alt="메뉴관련사진">
+          </div>
+  
+          <div class="btn_close">
+            <img src="../images/common/btn_close.png" alt="팝업 닫기">
+          </div><!-- btn_close -->
+        </div><!-- depth2_03 -->
+  
+        <div class="depth2_bg depth2_04">
+          <div class="depth2_left">
+            <ul>
+              <li><a href="../sub/campaign.html">캠페인</a></li>
+              <li><a href="../sub/campaign.html">이벤트</a></li>
+              <li><a href="../sub/campaign.html">News</a></li>
+            </ul>
+          </div> <!-- depth2_left -->
+  
+          <div class="depth2_right">
+            <img src="../images/common/depth2-04.png" alt="메뉴관련사진">
+          </div>
+  
+          <div class="btn_close">
+            <img src="../images/common/btn_close.png" alt="팝업 닫기">
+          </div><!-- btn_close -->
+        </div><!-- depth2_04 -->
+      </div> <!-- depth2 -->
+    </header>
+
+
+    <div class="sub_tab">
+      <ul class="sub_tab_list">
+        <li><a href="#">클렌저</a></li>
+        <li><a href="#">각질제거</a></li>
+        <li><a href="#">트리트먼트 & 마스크</a></li>
+        <li><a href="#">토너</a></li>
+        <li><a href="#">하이드레이터</a></li>
+        <li><a href="#">립&아이</a></li>
+        <li><a href="#">쉐이빙</a></li>
+        <li><a href="#">선케어</a></li>
+      </ul><!-- sub_tab_list -->
+    </div><!-- sub_tab -->
+
+    <main id="container">
+      <section id="info">
+        <div class="inner">
+          <div class="info_img">
+            <img src="../images/sub/product/detail/product-01.png" alt="페뷸러스 페이스 클렌저">
+          </div><!-- info_img -->
+
+          <div class="info_txt">
+            <h2>
+              Fabulous Face Cleanser <br>
+              페뷸러스 페이스 클렌저
+
+              <div class="type">
+                <img src="../images/sub/product/detail/type-01.png" alt="건성">
+                <img src="../images/sub/product/detail/type-02.png" alt="중성">
+              </div>
+
+            </h2>
+
+            <ul>
+              <li> 수분 공급을 위한 보태니컬 성분이 함유된 <br class="tablet"> 부드러운 타입의 젤 클렌저</li>
+              <li> 베르가모트 오일, 캐모마일 꽃 오일, 로즈마리잎 </li>
+              <li> #상쾌한 #진정된 #부드러운 </li>
+              <li>
+                <fieldset>
+                  <legend></legend>
+
+                  <div>
+                    <input type="radio" id="100ml" name="drone" value="100ml" checked>
+                    <label for="100ml">100ml</label>
+                  </div>
+
+                  <div>
+                    <input type="radio" id="200ml" name="drone" value="200ml">
+                    <label for="dewey">200ml</label>
+                  </div>
+                </fieldset>
+
+                <p class="price"> ￦35,000 </p>
+              </li>
+              <li>
+                <div>
+                  <img src="../images/common/good.png" alt="찜하기">
+                  <img src="../images/common/cart.png" alt="찜">
+                </div>
+
+                <a href="#">구매하기</a>
+
+              </li>
+            </ul>
+
+          </div><!-- info_txt -->
+
+        </div>
+      </section><!-- info -->
+
+      <section id="detail">
+        <div class="inner">
+          <div class="detail_img">
+            <img src="../images/sub/product/detail/detail_img.png" alt="디테일이미지">
+          </div><!-- detail_img -->
+
+
+          <div class="second_detail">
+            <div class="sub_title">
+              <h2>
+                시트러스의 상쾌함, <br>
+                허브의 편안함,
+              </h2>
+
+              <p>
+                적은 거품으로 <br>
+                깔끔한 세안을 도와드립니다.
+              </p>
+
+              <ul class="desc">
+                <li>
+                  Ingredient <span>성분</span>
+                  <img src="../images/common/toggle.png" alt="토글화살표">
+
+                  <ul class="more">
+                    <li>
+                      아보카도오일, 스위트아몬드오일, 퀸즈랜드넛오일, 쌀겨오일, C12-13파레스-3, 돌콩오일, 비사보롤, 토코페롤, 해바라기씨오일, 라벤더오일, 오르메니스 물티카울리스오일,
+                      마트리카리아꽃오일, 카룸 페트로셀리눔씨오일, 베타-카로틴, 당근추출물, 리날룰, 리모넨
+                    </li>
+                    <li>
+                      성분 목록은 변경될 수 있습니다. 구매하신 제품에 대한 정확한 성분 목록은, 사용 전 제품 라벨을 참조하시기 바랍니다.
+                    </li>
+                    <li>
+                      이솝은 PETA로부터 비건 인증을 받은 브랜드로 자체 안전성과 효능, 지속가능성을 확인한 성분을 사용합니다.
+                    </li>
+                  </ul>
+                </li>
+
+                <li>
+                  How To Use <span>사용방법</span>
+                  <img src="../images/common/toggle.png" alt="토글화살표">
+
+                  <ul class="more">
+                    <li>
+                      아침과 저녁, 손바닥에 물과 함께 섞어 밀키한 에멀젼으로 만들어 젖은 얼굴과 목에 마사지 한 후 물로 씻어냅니다.
+                    </li>
+
+                    <li>
+                      <span>사용량</span>
+                      티스푼 1스푼 + 물 3~5방울
+                    </li>
+
+                    <li>
+                      <span>향</span>
+                      허브향, 플로랄, 너티
+                    </li>
+                  </ul>
+
+                </li>
+              </ul>
+            </div><!-- sub_title -->
+
+            <div class="sub_img">
+              <img src="../images/sub/product/detail/detail_img_02.png" alt="제형">
+            </div><!-- sub_img -->
+          </div><!-- second_detail -->
+
+        </div><!-- inner -->
+      </section><!-- detail -->
+
+      <section id="recommend">
+        <div class="inner_100">
+          <h2>같은 피부 타입에 추천하는 제품</h2>
+
+          <div class="swiper recommend_list">
+            <ul class="swiper-wrapper">
+
+              <li class="swiper-slide">
+                <div class="thumbnail">
+                  <a href="#">
+                    <img src="../images/sub/product/detail/recommend-01.png" alt="제품 사진 1번">
+                  </a>
+                </div><!-- thumbnail -->
+
+                <h3 class="product_name">
+                  <a href="#">파슬리 씨드 클렌징 오일</a>
+                </h3>
+
+                <p> 특히 건성, 민감성 피부에 이상적 </p>
+              </li><!-- swiper-slide -->
+
+              <li class="swiper-slide">
+                <div class="thumbnail">
+                  <a href="#">
+                    <img src="../images/sub/product/detail/recommend-02.png" alt="제품 사진 1번">
+                  </a>
+                </div><!-- thumbnail -->
+
+                <h3 class="product_name">
+                  <a href="#">파슬리 씨드 클렌징 오일</a>
+                </h3>
+
+                <p> 특히 건성, 민감성 피부에 이상적 </p>
+              </li><!-- swiper-slide -->
+
+              <li class="swiper-slide">
+                <div class="thumbnail">
+                  <a href="#">
+                    <img src="../images/sub/product/detail/recommend-03.png" alt="제품 사진 1번">
+                  </a>
+                </div><!-- thumbnail -->
+
+                <h3 class="product_name">
+                  <a href="#">파슬리 씨드 클렌징 오일</a>
+                </h3>
+
+                <p> 특히 건성, 민감성 피부에 이상적 </p>
+              </li><!-- swiper-slide -->
+
+              <li class="swiper-slide">
+                <div class="thumbnail">
+                  <a href="#">
+                    <img src="../images/sub/product/detail/recommend-04.png" alt="제품 사진 1번">
+                  </a>
+                </div><!-- thumbnail -->
+
+                <h3 class="product_name">
+                  <a href="#">파슬리 씨드 클렌징 오일</a>
+                </h3>
+
+                <p> 특히 건성, 민감성 피부에 이상적 </p>
+              </li><!-- swiper-slide -->
+
+
+            </ul><!-- swiper-wrapper -->
+
+            <div class="swiper-scrollbar swiper-scrollbar-horizontal"> </div>
+
+          </div><!-- swiper product_list -->
+        </div>
+
+      </section><!-- recommend -->
+    </main><!-- container -->
+
+    <footer id="footer">
+      <div class="inner">
+        <div class="footer_right">
+          <p class="number">1800-1987</p>
+          <p class="email">Aesop@aesop.com</p>
+
+          <ul class="sns">
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Twitter</a></li>
+            <li><a href="#">LinkedIn</a></li>
+            <li><a href="#">KaKao Plus Friend</a></li>
+          </ul>
+
+          <ul class="user">
+            <li><a href="#">개인정보처리방침</a></li>
+            <li><a href="#">이용약관</a></li>
+            <li><a href="#">이메일무단수집금지</a></li>
+            <li><a href="#">문의하기</a></li>
+          </ul>
+        </div><!-- footer_right -->
+
+        <div class="footer_logo">
+          <a href="#"><img src="../images/common/logo.png" alt="aesop"></a>
+        </div><!-- footer_logo -->
+
+        <div class="footer_left">
+          <p>이솝의 이야기를 들려드릴게요!</p>
+
+          <form>
+            <fieldset>
+              <legend> 이메일 구독 </legend>
+
+              <input type="text">
+              <input type="submit" value="검색">
+
+            </fieldset>
+          </form>
+
+          <address>
+            상호: 이솝코리아 유한회사 <br>
+            주소: 서울특별시 강남구 도산대로45길 10-6 이솝코리아
+          </address>
+          <p class="business">
+            대표자 : 프레데리크미셸어완세일러 <br>
+            호스팅 사업자 : SAP Hybris <br>
+            사업자 등록 번호 : 220-88-56014 사업자정보확인 <br>
+            통신판매업 신고번호 : 2014-서울강남-02300
+          </p>
+        </div><!-- footer_left -->
+      </div><!-- inner -->
+    </footer>
+
+
+  </div><!-- wrap -->
+
+</body>
+
+</html>

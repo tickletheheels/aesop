@@ -1,0 +1,302 @@
+@charset "utf-8";
+
+/* 
+@keyframes test {
+  0% {
+    opacity: 0;
+    transform: translate3d(200px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate3d(0);
+  }
+} */
+
+/* @keyframes best {
+  0% {
+    opacity: 0;
+    transform: translateY(200px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+} */
+
+
+
+body {
+  font-family: 'Nanum Myeongjo', serif;
+  font-size: 1.6rem;
+  line-height: 1.5;
+  color: #000;
+}
+
+.clearfix::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.inner {
+  max-width: calc(100% - 20.975vw);
+  margin: 0 auto;
+}
+
+/* 지정된 크기 */
+.inner_100 {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+#wrap {
+  background: #EFEFE4;
+}
+
+/* 100% */
+
+@media (max-width:1600px) {
+  .inner {
+    max-width: calc(100% - 160px);
+  }
+
+  /* margin은 잡혀있어서 넣을 필요 없음 */
+}
+
+@media (max-width:1400px) {
+  .inner {
+    max-width: calc(100% - 140px);
+  }
+}
+
+@media (max-width:1200px) {
+  .inner {
+    max-width: calc(100% - 120px);
+  }
+}
+
+@media (max-width:1024px) {
+  .inner {
+    max-width: calc(100% - 100px);
+  }
+}
+
+@media (max-width:768px) {
+  .inner {
+    max-width: calc(100% - 40px);
+  }
+
+}
+
+
+
+
+#sub_visual h2 {
+  font-size: 15rem;
+  font-weight: 500;
+  letter-spacing: -3px;
+  position: absolute;
+  left: 3%;
+  top: 35vh;
+  font-family: 'Optima', serif;
+  font-weight: 400;
+}
+
+
+@media (max-width:768px) {
+  #sub_visual .sv1 img {
+    height: 200px;
+  }
+
+  #sub_visual h2 {
+    font-size: 5rem;
+    position: absolute;
+    left: 3%;
+    top: 25vh;
+  }
+
+}
+
+
+
+#intro {
+  padding: 10% 0;
+}
+
+#intro .textbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+#intro .textbox .left {
+  width: 50vw;
+  transform: translateX(-10%);
+}
+
+#intro .textbox .right {
+  width: 25vw;
+  text-align: right;
+}
+
+#intro .textbox .right p {
+  padding: 5% 0;
+  font-size: 2rem;
+}
+
+
+
+@media (max-width:768px) {
+  #intro {
+    padding: 10% 0;
+  }
+  
+  #intro .textbox .left {
+    width: 100vw;
+    transform: translateX(0);
+    padding: 5% 0;
+  }
+  
+  #intro .textbox .right {
+    width: 100vw;
+    text-align: right;
+  }
+  
+  #intro .textbox .right p {
+    font-size: 1.6rem;
+  }
+  
+}
+
+
+
+#method {
+  height: 120vh;
+}
+
+#method .inner {
+  position: relative;
+}
+
+#method h2 {display: none;}
+
+#method .textbox {
+  position: absolute;
+  left: 0;
+  top: 25vw;
+  font-size: 3.6rem;
+  z-index: 9;
+}
+#method .textbox p {
+  padding-bottom: 5%;
+}
+
+#method .imgbox {
+  position: absolute;
+  left: 50%;
+  top: 30vw;
+  transform: translate(-50%, -50%);
+}
+
+@media (max-width:768px) {
+  #method {
+    height: 80vh;
+  }
+  
+  #method .textbox {
+    position: absolute;
+    left: 0;
+    top: 80vw;
+    font-size: 1.8rem;
+    z-index: 9;
+  }
+  
+  #method .imgbox {
+    position: absolute;
+    left: 50%;
+    top: 50vw;
+    transform: translate(-50%, -50%);
+  }
+}
+
+
+
+#product {
+  padding: 10% 0;
+  text-align: center;
+  font-size: 2.4rem;
+}
+
+#product h2 {
+  font-size: 6.4rem;
+  font-weight: 400;
+  text-align: center;
+}
+
+
+#product .product_list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 10% 0;
+}
+
+#product .product_list li {
+  width: calc(100% / 3);
+}
+
+#product .notice {
+  padding: 5% 0;
+  font-weight: 700;
+}
+
+#product a {
+  display: inline-block;
+  border: 1px solid #000;
+  padding: 1%;
+}
+
+#product a:hover {
+  background: #282622;
+  color: #EFEFE4;
+  transition: 0.5s;
+}
+
+@media (max-width:768px) {
+  
+  #product {
+    font-size: 1.5rem;
+  }
+
+  #product h2 {
+    font-size: 4rem;
+    font-weight: 400;
+    text-align: center;
+  }
+  
+  
+  #product .product_list li {
+    width: calc(100% / 3);
+  }
+  
+  #product .notice {
+    padding: 5% 0;
+    font-weight: 700;
+  }
+  
+  #product a {
+    display: inline-block;
+    border: 1px solid #000;
+    padding: 3%;
+    font-size: 1.6rem;
+  }
+  
+  #product a:hover {
+    background: #282622;
+    color: #EFEFE4;
+    transition: 0.5s;
+  }
+}

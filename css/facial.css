@@ -1,0 +1,394 @@
+@charset "utf-8";
+
+/* 
+@keyframes test {
+  0% {
+    opacity: 0;
+    transform: translate3d(200px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate3d(0);
+  }
+} */
+
+/* @keyframes best {
+  0% {
+    opacity: 0;
+    transform: translateY(200px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+} */
+
+
+
+body {
+  font-family: 'Nanum Myeongjo', 'Optima';
+  font-size: 1.6rem;
+  line-height: 1.5;
+  color: #000;
+}
+
+.clearfix::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.inner {
+  max-width: calc(100% - 20.975vw);
+  margin: 0 auto;
+}
+
+/* 지정된 크기 */
+.inner_100 {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+#wrap {
+  background: #EFEFE4;
+}
+
+@media (max-width:768px) {
+  .inner {
+    max-width: calc(100% - 40px);
+  }
+
+}
+
+
+
+#sub_visual h2 {
+  font-size: 15rem;
+  font-weight: 500;
+  letter-spacing: -3px;
+  position: absolute;
+  left: 3%;
+  top: 35vh;
+  font-family: 'Optima', serif;
+  font-weight: 400;
+}
+
+
+@media (max-width:768px) {
+  #sub_visual .sv1 {
+    height: 200px;
+  }
+
+  #sub_visual .sv1 img {
+    height: 100%;
+    object-fit: cover;
+  }
+
+  #sub_visual h2 {
+    font-size: 4rem;
+    left: 3%;
+    top: 45vw;
+  }
+
+}
+
+
+#container {
+  padding: 100px 0;
+}
+
+#container .store_img {
+  text-align: center;
+}
+
+#container .textbox {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 100px;
+}
+
+
+
+#container .textbox .left h2 {
+  font-size: 9.6rem;
+  font-weight: 400;
+  padding-bottom: 10%;
+}
+
+#container .textbox .left a {
+  display: inline-block;
+  font-size: 3.6rem;
+  padding: 10px;
+  border: 1px solid #000;
+}
+
+#container .textbox .left a:hover {
+  background: #282622;
+  color: #EFEFE4;
+  transition: 0.5s;
+}
+
+#container .textbox .right {
+  width: 30vw;
+}
+
+
+#container .textbox .right .iconbox {
+  padding-bottom: 8%;
+}
+
+#container .textbox .right li {
+  padding: 10px 0;
+  font-size: 2rem;
+  border-bottom: 1px solid #000;
+}
+
+
+@media (max-width:768px) {
+
+  #container {
+    padding: 100px 0;
+  }
+
+
+  #container .textbox {
+    justify-content: flex-start;
+    padding: 30px 0;
+  }
+
+
+  #container .textbox .left h2 {
+    font-size: 4rem;
+    padding-bottom: 5%;
+  }
+
+  #container .textbox .left a {
+    font-size: 1.8rem;
+  }
+
+  #container .textbox .right {
+    width: 100vw;
+  }
+
+  #container .textbox .right .iconbox {
+    padding: 3%;
+    display: flex;
+    justify-content: center;
+    width: 35%;
+    transform: translateX(70%);
+  }
+
+  #container .textbox .right .iconbox img {
+    max-width: 100%;
+  }
+
+  #container .textbox .right li {
+    padding: 10px 0;
+    font-size: 1.6rem;
+    border-bottom: 1px solid #000;
+  }
+
+
+}
+
+
+#intro {
+  padding: 15% 0;
+}
+
+#intro h2 {
+  font-size: 15rem;
+  font-weight: 500;
+  letter-spacing: -3px;
+  font-family: 'Optima', serif;
+  font-weight: 400;
+}
+
+#intro .textbox {
+  display: flex;
+  justify-content: center;
+}
+
+#intro .textbox .left {
+  transform: translateX(-5%);
+  width: 50vw;
+}
+
+#intro .textbox .right {
+  text-align: right;
+}
+
+#intro .textbox .right h3 {
+  font-size: 4.8rem;
+  padding-bottom: 10%;
+  font-weight: 400;
+}
+
+#intro .textbox .right p {
+  font-size: 2.4rem;
+  padding-bottom: 3%;
+}
+
+@media (max-width:768px) {
+
+
+  #intro {
+    padding: 150px 0;
+  }
+
+  #intro h2 {
+    font-size: 4rem;
+  }
+
+  #intro .textbox {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-wrap: wrap;
+  }
+
+  #intro .textbox .left {
+    padding: 20px 0;
+    width: 100vw;
+  }
+
+
+  #intro .textbox .right h3 {
+    font-size: 2.4rem;
+  }
+
+  #intro .textbox .right p {
+    font-size: 1.6rem;
+    padding-bottom: 1%;
+  }
+
+}
+
+
+
+#guide h2 {
+  font-size: 4.8rem;
+  font-weight: 400;
+  padding: 5% 0;
+}
+
+#guide p {
+  font-size: 2rem;
+  padding-bottom: 3%;
+}
+
+
+@media (max-width:768px) {
+
+  #guide h2 {
+    font-size: 2.4rem;
+    font-weight: 400;
+    padding: 10% 0;
+  }
+
+  #guide p {
+    font-size: 1.6rem;
+    padding-bottom: 5%;
+  }
+
+
+}
+
+
+#treatment {
+  padding: 15%;
+}
+
+#treatment .imgbox {
+  text-align: center;
+  padding-bottom: 2%;
+}
+
+#treatment p {
+  text-align: center;
+}
+
+#treatment .provide {
+  padding-top: 20%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 5%;
+}
+
+#treatment .provide h2 {
+  font-size: 4.8rem;
+  font-weight: 400;
+  padding-bottom: 5%;
+}
+
+#treatment .provide .component {
+  font-size: 3rem;
+  width: 30vw;
+}
+
+#treatment .provide .component img.active {
+  transform: rotate(180deg);
+}
+
+#treatment .provide .component>li {
+  border-bottom: 1px solid #000;
+  cursor: pointer;
+  padding: 3% 0;
+}
+
+#treatment .provide .component .more li {
+  font-size: 1.6rem;
+  color: #333;
+  padding: 2% 0;
+}
+
+
+@media (max-width:768px) {
+
+  #treatment {
+    padding: 150px 0;
+  }
+  
+
+  
+  
+  #treatment .provide {
+    padding-top: 10%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  
+  #treatment .provide h2 {
+    font-size: 3rem;
+    font-weight: 400;
+    text-align: center;
+    padding: 10% 0;
+  }
+  
+  #treatment .provide .component {
+    font-size: 2rem;
+    width: 90vw;
+  }
+  
+  #treatment .provide .component img.active {
+    transform: rotate(180deg);
+  }
+  
+  #treatment .provide .component>li {
+    border-bottom: 1px solid #000;
+    cursor: pointer;
+    padding: 3% 0;
+  }
+  
+  #treatment .provide .component .more li {
+    font-size: 1.6rem;
+    color: #333;
+    padding: 2% 0;
+  }
+
+}
